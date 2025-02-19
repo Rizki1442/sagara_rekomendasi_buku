@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Buku</title>
+    <link href="../static/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="https://img.freepik.com/free-vector/book-with-lighbulb-cartoon-vector-icon-illustration-object-education-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4009.jpg?ga=GA1.1.559232191.1739536249&semt=ais_hybrid" type="image/x-icon">
+</head>
+<body>
+    <div class="fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="nav-kata bg-white p-4">
+                <a href="{{url_for('home')}}"><h1 class="text-black h6">Home</h1></a>
+                <a href="{{url_for('rekomendasi')}}"><h1 class="text-black h6">Rekomendasi Buku</h1></a>
+                <a href="{{url_for('home')}}#about"><h1 class="text-black h6">About</h1></a>
+                <a href="{{url_for('home')}}#vision"><h1 class="text-black h6">Visi Misi</h1></a>
+                <a href="{{url_for('home')}}#contact"><h1 class="text-black h6">Kontak</h1></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-light bg-white shadow-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+    <div class="container mt-5 pt-5">
+        <h2 class="text-center">Rekomendasi Buku Berdasarkan Genre</h2>
+
+        <!-- Form memilih genre -->
+        <div class="form-group">
+            <label for="genreSelect">Pilih Genre:</label>
+            <select id="genreSelect" class="form-control">
+                <option value="fiction">Fiksi</option>
+                <option value="non-fiction">Non-Fiksi</option>
+                <option value="mystery">Misteri</option>
+                <option value="fantasy">Fantasi</option>
+                <option value="romance">Romantis</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary" id="recommendButton">Dapatkan Rekomendasi</button>
+
+        <div id="bookRecommendations" class="mt-4 row">
+            <!-- Rekomendasi buku akan tampil di sini dalam bentuk card -->
+        </div>
+    </div>
+ 
+
+    <script src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    text-decoration:none;
+}
+
+/* Jumbotron styling */
+#jumbotron {
+    background-color: #b3cdf4;
+        padding: 125px 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-bottom: 40px;
+}
+
+#jumbotron .logo-buku {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+    /* Styling untuk container utama */
+    .container {
+        max-width: 900px;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Judul */
+    h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    /* Form label */
+    .form-group label {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Styling untuk select dropdown */
+    select {
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        width: 100%;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease;
+    }
+
+    select:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    /* Styling untuk button */
+    .btn {
+        border-radius: 25px;
+        font-size: 1.1rem;
+        padding: 12px 20px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Button utama (rekomendasi) */
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+        transform: translateY(-2px);
+    }
+
+    /* Area rekomendasi buku */
+    #bookRecommendations {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    /* Styling untuk card buku */
+    .card {
+        width: 250px;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    .card-footer {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .card-footer a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .card-footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive design untuk tampilan mobile */
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+        }
+    }
+
+
+
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 22%; /* For larger screens, adjust card size to 22% of the row */
+        max-width: 22%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-12 {
+        flex: 0 0 100%; /* On small screens, the cards take up 100% of the width */
+        max-width: 100%;
+    }
+}
+
+.jumbotron .display-4 {
+    font-weight: bold;
+    color: #060708;
+}
+
+.nav-kata {
+    font-size: small;
+}
+
+.nav-kata a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: inherit; /* Menggunakan warna teks induk (dalam hal ini, hitam) */
+}
+
+
+#about .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically centers the content */
+    height: 100%; /* Ensure the container has enough height */
+}
+
+/* Additional styling for a cleaner card presentation */
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
