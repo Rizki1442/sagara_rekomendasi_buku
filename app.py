@@ -10,6 +10,10 @@ def home():
 def rekomendasi():
     return render_template('rekomendasi.html')
 
+@app.route('/erd')
+def erd():
+    return render_template('ERD.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
