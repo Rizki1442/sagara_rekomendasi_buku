@@ -199,3 +199,17 @@ body {
 .ERD{
     margin-top: 80px;
 }
+
+:root {
+    --animate-spin: spin 1s linier infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-animation {
+    animation: spin 1s linear infinite;
+}
